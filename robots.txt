@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin
+Disallow: /api/admin/
+Sitemap: https://github.com/TheDeviLKek/kanye_site.git/sitemap.xml

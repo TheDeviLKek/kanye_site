@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>window.STATIC_SITE = true;</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+  <title>Альбом — Эра Ye</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#050508"><meta name="description" content="Оркестровый соул с Джоном Брайоном: струнные, живые инструменты и хиты вроде Gold Digger."><meta property="og:type" content="website"><meta property="og:site_name" content="Эра Ye"><meta property="og:title" content="Late Registration (2005) — Эра Ye"><meta property="og:description" content="Оркестровый соул с Джоном Брайоном: струнные, живые инструменты и хиты вроде Gold Digger."><meta property="og:url" content="https://github.com/TheDeviLKek/kanye_site.git/album/2"><meta property="og:image" content="https://github.com/TheDeviLKek/kanye_site.git/static/og/album-2.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <div class="bg-a" aria-hidden="true"></div>
+  <header class="top">
+    <a class="logo" href="/">Эра Ye</a>
+    <nav aria-label="Разделы"><a href="/albums">Альбомы</a><a href="/story">История</a><a href="/influence">Архитектура влияния</a><a href="/quiz">Викторина</a><a href="/compare">Сравнение</a><a href="/#quote">Цитаты</a></nav>
+  </header>
+  <main class="pg ap-pg">
+    <a class="back" href="/albums">← Все альбомы</a>
+    <div class="ap" id="ap"></div>
+    <nav class="pn" id="pn" aria-label="Соседние альбомы"></nav>
+  </main>
+  <div class="player dock" aria-label="Плеер">
+    <button class="play" id="pl-btn" type="button" aria-label="Играть"></button>
+    <div class="pl-main">
+      <div class="pl-head"><strong id="pl-title">Выберите трек</strong><span id="pl-time" class="muted">0:00 / 0:30</span></div>
+      <input id="pl-bar" type="range" min="0" max="1000" value="0" aria-label="Прогресс трека">
+    </div>
+  </div>
+  <script src="/static/common.js"></script>
+  <script src="/static/player.js"></script>
+  <script src="/static/spotify.js"></script>
+  <script src="/static/album.js"></script>
+  <script src="/static/fx.js"></script>
+  <script src="/static/fav.js"></script>
+</body>
+</html>

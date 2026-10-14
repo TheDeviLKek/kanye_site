@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>window.STATIC_SITE = true;</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Архитектура влияния — Эра Ye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#050508"><meta name="description" content="Интерактивная карта: кто и через какой трек связан с Канье, плюс «машина времени»."><meta property="og:type" content="website"><meta property="og:site_name" content="Эра Ye"><meta property="og:title" content="Архитектура влияния — Эра Ye"><meta property="og:description" content="Интерактивная карта: кто и через какой трек связан с Канье, плюс «машина времени»."><meta property="og:url" content="https://github.com/TheDeviLKek/kanye_site.git/influence"><meta property="og:image" content="https://github.com/TheDeviLKek/kanye_site.git/static/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="infl">
+  <div class="bg-a" aria-hidden="true"></div>
+  <header class="top">
+    <a class="logo" href="/">Эра Ye</a>
+    <nav aria-label="Разделы"><a href="/albums">Альбомы</a><a href="/story">История</a><a href="/influence" aria-current="page">Архитектура влияния</a><a href="/quiz">Викторина</a><a href="/compare">Сравнение</a><a href="/#quote">Цитаты</a></nav>
+  </header>
+  <main class="inf">
+    <p class="kicker">Интерактивная карта · 21 узел</p>
+    <h1>Архитектура <span>влияния</span></h1>
+    <p class="muted lead2">Перетаскивайте узлы. Нажмите на узел, чтобы увидеть трек, через который проходит связь. Сплошные линии: прямое участие, пунктир: влияние и наследие звука.</p>
+    <button class="ghost" id="replay" type="button">↻ Повторить анимацию</button>
+    <div class="legend"><span class="lg k">Kanye West</span><span class="lg a">Альбом</span><span class="lg p">Артист</span><span class="lg s">Прямая связь</span><span class="lg d">Влияние</span></div>
+    <div class="tm"><button class="ghost" id="play-time" type="button">▶ Машина времени</button><input id="yr" type="range" min="2004" max="2024" value="2024" aria-label="Год"><output id="yr-out">2024</output><span class="muted" id="yr-note"></span></div>
+    <div class="map" id="map"><svg class="lines" id="lines" aria-hidden="true"></svg></div>
+    <aside class="info" id="info" aria-live="polite"></aside>
+  </main>
+  <script src="/static/common.js"></script>
+  <script src="/static/influence.js"></script>
+  <script src="/static/fx.js"></script>
+  <script src="/static/fav.js"></script>
+</body>
+</html>

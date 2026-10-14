@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <script>window.STATIC_SITE = true;</script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Эра Канье Уэста: как один артист переписал звук индустрии</title>
+  <meta name="description" content="Интерактивный разбор дискографии Канье Уэста и его влияния на хип-хоп и современную музыку.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#050508"><meta name="description" content="Дискография, архитектура влияния, викторина и сравнение альбомов: интерактивный проект о Канье Уэсте."><meta property="og:type" content="website"><meta property="og:site_name" content="Эра Ye"><meta property="og:title" content="Эра Ye: как Канье Уэст переписал звук поколения"><meta property="og:description" content="Дискография, архитектура влияния, викторина и сравнение альбомов: интерактивный проект о Канье Уэсте."><meta property="og:url" content="https://github.com/TheDeviLKek/kanye_site.git/"><meta property="og:image" content="https://github.com/TheDeviLKek/kanye_site.git/static/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+  <div class="bg-a home-bg" aria-hidden="true"></div>
+  <canvas id="sphere" aria-hidden="true"></canvas>
+  <div class="stage" aria-hidden="true">
+    <i class="beam" style="--x:8%;--r:-16deg;--s:9s;--d:.3s"></i><i class="beam" style="--x:30%;--r:-7deg;--s:11s;--d:.5s"></i>
+    <i class="beam" style="--x:68%;--r:8deg;--s:10s;--d:.7s"></i><i class="beam" style="--x:92%;--r:17deg;--s:12s;--d:.9s"></i>
+    <div class="lights"></div>
+    <div class="spot"></div>
+    <canvas class="dust"></canvas>
+    <div class="screen"><img src="/static/face.jpg" alt=""></div>
+    <div class="halo"></div>
+    <svg class="man" viewBox="0 0 120 104" aria-hidden="true">
+      <g fill="#04050a" stroke="#04050a" stroke-linecap="round" stroke-linejoin="round">
+        <ellipse cx="36" cy="13" rx="6.3" ry="7.4" transform="rotate(-14 36 13)" stroke="none"/>
+        <path d="M36 19 L38 26" stroke-width="6" fill="none"/>
+        <path d="M28 27 Q37 23 47 26 L50 40 L46 59 L32 59 L29 41 Z" stroke-width="2.5"/>
+        <path d="M30 30 L14 42 L28.5 24" fill="none" stroke-width="6.5"/>
+        <path d="M46 29 L54 44 L58 57" fill="none" stroke-width="6.2"/>
+        <path d="M35 58 L31 76 L28 92" fill="none" stroke-width="9"/>
+        <path d="M44 58 L60 74 L66 90" fill="none" stroke-width="9"/>
+        <path d="M20 93 L34 93 L35 98 L18 98 Z" stroke-width="2"/>
+        <path d="M61 90 L74 91 L77 97 L62 97 Z" stroke-width="2"/>
+      </g>
+      <g stroke="none"><rect x="25.4" y="18" width="3.6" height="9.5" rx="1.8" transform="rotate(32 27 22)" fill="#d9dfff"/><circle cx="30.6" cy="18.2" r="2.3" fill="#aab4e6"/></g>
+      <path d="M58 57 Q84 68 112 80" fill="none" stroke="rgba(215,230,255,.8)" stroke-width=".9"/><circle cx="112" cy="80" r="1.8" fill="rgba(215,230,255,.9)"/>
+    </svg>
+    <div class="mist"></div>
+    <div class="fog"></div><div class="crowd"></div><div class="cue">Листайте ↓</div>
+  </div>
+
+  <header class="top">
+    <a class="logo" href="#hero">Эра Ye</a>
+    <nav aria-label="Разделы">
+      <a href="/albums">Альбомы</a><a href="/story">История</a><a href="/influence">Архитектура влияния</a><a href="/quiz">Викторина</a><a href="/compare">Сравнение</a><a href="#timeline">Влияние</a><a href="#samples">Сэмплы</a><a href="#quote">Цитаты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h1 aria-label="Он переписал звук целого поколения">
+        <span class="w" style="--i:0">Он</span> <span class="w" style="--i:1">переписал</span>
+        <span class="w" style="--i:2">звук</span> <span class="w" style="--i:3">целого</span>
+        <span class="w" style="--i:4">поколения</span>
+      </h1>
+      <p class="lead">От ускоренного соула до автотюна и индастриала: как Канье Уэст каждые несколько лет менял правила хип-хопа и поп-музыки. Двигайте курсором и скроллите, сфера реагирует.</p>
+      <div class="hero-cta"><a class="btn" href="/albums">Слушать альбомы</a><a class="btn alt" href="/influence">Карта влияния</a></div>
+    </section>
+
+    <section class="block cta">
+      <a class="cc" href="/albums"><small>Дискография</small><b>Все альбомы и треки</b><span>→</span></a>
+      <a class="cc" href="/influence"><small>Интерактивная карта</small><b>Архитектура влияния</b><span>→</span></a>
+      <a class="cc" href="/story"><small>Хронология</small><b>История Канье</b><span>→</span></a>
+      <a class="cc" href="/quiz"><small>Игра</small><b>Викторина</b><span>→</span></a>
+      <a class="cc" href="/compare"><small>Инструмент</small><b>Сравнить альбомы</b><span>→</span></a>
+      <a class="cc" href="/favorites"><small>Плейлист</small><b>Избранное</b><span>→</span></a>
+    </section>
+
+    <div class="marq" aria-hidden="true"><div class="marq-in" id="marq"></div></div>
+
+    <section id="albums" class="block" data-accent="#7b6cff">
+      <h2>Эволюция дискографии</h2>
+      <div class="filters" id="filters" role="group" aria-label="Фильтр по звуку"></div>
+      <div class="grid" id="album-grid"></div>
+
+      <div class="panel" id="panel" hidden>
+        <div class="panel-info">
+          <h3 id="panel-title"></h3>
+          <p id="panel-blurb" class="muted"></p>
+          <button class="ghost" id="panel-close" type="button">Закрыть</button>
+        </div>
+        <div class="panel-play">
+          <ul class="tracks" id="tracks"></ul>
+          <div class="player" aria-label="Плеер">
+            <button class="play" id="pl-btn" type="button" aria-label="Играть"></button>
+            <div class="pl-main">
+              <div class="pl-head"><strong id="pl-title">Выберите трек</strong><span id="pl-time" class="muted">0:00 / 0:30</span></div>
+              <input id="pl-bar" type="range" min="0" max="1000" value="0" aria-label="Прогресс трека">
+              <small class="muted" id="pl-note">Демо-отрывок синтезируется в браузере. Свои mp3 подключаются через поле preview_url.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="block" data-accent="#d9b36b">
+      <h2>Как менялся звук индустрии</h2>
+      <ol class="timeline" id="timeline-list"></ol>
+    </section>
+
+    <section id="samples" class="block" data-accent="#ff4fd8">
+      <h2>Было и стало: архитектура сэмпла</h2>
+      <div class="grid samples" id="sample-grid"></div>
+    </section>
+
+    <section id="stats" class="block" data-accent="#4fd8ff">
+      <h2>Масштаб в цифрах</h2>
+      <div class="stats" id="stat-grid"></div>
+    </section>
+
+    <section id="gallery" class="block" data-accent="#7bffb0">
+      <h2>Галерея</h2>
+      <div class="gal">
+        <figure class="ph a"><img src="/static/img/p1.jpg" alt="Портрет, 2009" loading="lazy"><figcaption><b>2009</b>Tribeca Film Festival</figcaption></figure>
+        <figure class="ph b"><img src="/static/img/p3.jpg" alt="Живое выступление: руки вверх" loading="lazy"><figcaption><b>Live</b>Руки вверх: зал и сцена</figcaption></figure>
+        <figure class="ph c"><img src="/static/img/p4.jpg" alt="Dropout Bear" loading="lazy"><figcaption><b>2004</b>Dropout Bear и эпоха The College Dropout</figcaption></figure>
+        <figure class="ph d"><img src="/static/img/p2.jpg" alt="Чёрно-белый портрет" loading="lazy"><figcaption><b>B/W</b>Портрет</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="quote" class="block quote-block" data-accent="#7b6cff">
+      <blockquote><p id="quote-text">Нажмите кнопку, чтобы получить цитату или принцип.</p><footer id="quote-ctx" class="muted"></footer></blockquote>
+      <button class="ghost big" id="quote-btn" type="button">Новая цитата</button>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wm" aria-hidden="true">KANYE WEST</div>
+    <div class="foot-row"><nav><a href="/albums">Альбомы</a><a href="/influence">Архитектура влияния</a><a href="#">Наверх ↑</a></nav><span class="muted">Неофициальный образовательный проект. Все названия принадлежат правообладателям. Фото: материалы владельца сайта, права принадлежат авторам.</span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="/static/common.js"></script>
+  <script src="/static/player.js"></script>
+  <script src="/static/spotify.js"></script>
+  <script src="/static/script.js"></script>
+  <script src="/static/fx.js"></script>
+  <script src="/static/fav.js"></script>
+  <script src="/static/gallery.js"></script>
+  <script src="/static/share.js"></script>
+</body>
+</html>
